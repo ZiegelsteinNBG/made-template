@@ -21,7 +21,6 @@ pipeline AirportsPipeline{
 
     block AirportTextFileInterpreter oftype TextFileInterpreter { }
 
-    // Needs to be looked at
     block AirportCSVInterpreter oftype CSVInterpreter {
         delimiter: ";";
     }
@@ -37,7 +36,7 @@ pipeline AirportsPipeline{
             "ICAO" oftype text,
             "Latitude" oftype decimal,
             "Longitude" oftype decimal,
-            "Altitude" oftype decimal
+            "Altitude" oftype integer
         ];
     }
 
