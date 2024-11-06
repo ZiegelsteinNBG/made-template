@@ -4,18 +4,18 @@
 ### Comparative Analysis of Green House Gases in Republican and Democratic States Across the United States
 
 ## Main Question
-1.How do greenhouse gas emissions vary between states governed by Republican vs. Democratic leadership in the U.S.
+1. Does CO2 emission of US states vary with party affiliation?
 
 ## Description
 
-Climate change has become a focal issue for both major political parties in the United States, each with distinct approaches and policies on the matter. The Democratic Party typically advocates for increased renewable energy adoption and stricter greenhouse gas (GHG) emission regulations, while the Republican Party's stance often favors economic incentives and gradual transitions that rely more on market-driven solutions. Given these contrasting perspectives, this analysis aims to examine the actual greenhouse gas emissions of states governed by each party.
+Climate change has become a focal point for both major U.S. political parties, each proposing distinct approaches to greenhouse gas (GHG) reduction. The Democratic Party generally advocates for increased renewable energy adoption and stricter GHG emissions regulations. Conversely, the Republican Party often favors economic incentives and market-driven solutions, focusing on gradual transitions. Given these policy differences, this analysis seeks to explore whether CO2 emissions vary between states based on political affiliation.
 
-To accomplish this, we will analyze data from two primary sources:
+To conduct this analysis, we will use two primary datasets:
 
-    1. The 2020 U.S. Presidential Election Results by State, to categorize each state’s political affiliation.
-    2. Greenhouse Gas Emissions by Location, a dataset that captures the state-by-state emissions output.
+    The 2020 U.S. Presidential Election Results by State to determine political affiliation.
+    Greenhouse Gas Emissions by Location, which provides CO2 emissions data by state.
 
-This comparison will provide insight into how political leadership may correlate with greenhouse gas emissions levels across the United States.
+This study will assess correlations between political leadership and state-level GHG emissions, without assuming causation. Additional factors, such as population density and energy infrastructure, will be considered in the discussion to provide context for the analysis. This approach aims to offer insights into how emissions may vary across U.S. states governed by different political parties and to suggest areas for future, more comprehensive studies.
 
 
 ## Datasources
