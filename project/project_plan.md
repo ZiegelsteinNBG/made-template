@@ -35,7 +35,7 @@ This comparison will provide insight into how political leadership may correlate
 * Data URL: <TBA>
 
 *  Data Type: ZIP -> CSV
-*  
+
 ## Work Packages
 
 <!-- List of work packages ordered sequentially, each pointing to an issue with more details. -->
