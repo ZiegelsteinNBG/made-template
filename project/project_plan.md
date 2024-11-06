@@ -1,4 +1,4 @@
-# PROJECT PLAN:
+# Project Plan
 
 ## Title
 
