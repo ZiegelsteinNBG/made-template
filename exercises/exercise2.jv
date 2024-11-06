@@ -43,7 +43,7 @@ pipeline TreesPipeline{
             "stadtteil" oftype VogelsangStdt,
             "standort" oftype text,
             "baumart_botanisch" oftype text,
-            "id" oftype text,
+            "id" oftype GeopointConstraint,
             "baumfamilie" oftype text
         ];
     }
@@ -55,7 +55,16 @@ pipeline TreesPipeline{
     }
     constraint VogelsangOnly on text: value in ["Vogelsang", "Vogelsang Bols-Siedlung"];//"Vogelsang"
 
+   constraint GeoAllow oftype RegexConstraint {
+        regex: /([0-9]{1,3}\.[0-9]+), ([0-9]{1,3}\.[0-9]+)/;
+    }
 
+    valuetype Geopoint oftype text {
+        constraints: [
+            GeopointConstraint,
+        ];
+}
+        
     block TreesLoader oftype SQLiteLoader {
         table: "trees";
         file: "./trees.sqlite";
