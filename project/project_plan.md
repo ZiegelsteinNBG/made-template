@@ -1,6 +1,7 @@
 # Project Plan
 
 ## Title
+### Comparative Analysis of Carbon Dioxide Emissions in Republican and Democratic States Across the United States
 
 ## Work Packages
 
