@@ -1,10 +1,21 @@
 # Project Plan
 
 ## Title
-### Comparative Analysis of Carbon Dioxide Emissions in Republican and Democratic States Across the United States
+### Comparative Analysis of Green House Gases in Republican and Democratic States Across the United States
 
 ## Main Question
-1. Which political party emits more Carbon Dioxide Emissions
+1.How do greenhouse gas emissions vary between states governed by Republican vs. Democratic leadership in the U.S.
+
+## Description
+
+Climate change has become a focal issue for both major political parties in the United States, each with distinct approaches and policies on the matter. The Democratic Party typically advocates for increased renewable energy adoption and stricter greenhouse gas (GHG) emission regulations, while the Republican Party's stance often favors economic incentives and gradual transitions that rely more on market-driven solutions. Given these contrasting perspectives, this analysis aims to examine the actual greenhouse gas emissions of states governed by each party.
+
+To accomplish this, we will analyze data from two primary sources:
+
+    The 2020 U.S. Presidential Election Results by State, to categorize each state’s political affiliation.
+    Greenhouse Gas Emissions by Location, a dataset that captures the state-by-state emissions output.
+
+This comparison will provide insight into how political leadership may correlate with greenhouse gas emissions levels across the United States.
 
 
 ## Datasources
@@ -17,7 +28,7 @@
 
 *  Data Type: XLS
 
-### Datasources2: GHGRP Emissions by Location
+### Datasources2: 2020 US Presidential Election Results by State
 
 * Metadata URL: <https://www.kaggle.com/datasets/callummacpherson14/2020-us-presidential-election-results-by-state/data>
 
