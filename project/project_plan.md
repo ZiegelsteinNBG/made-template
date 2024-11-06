@@ -12,8 +12,8 @@ Climate change has become a focal issue for both major political parties in the 
 
 To accomplish this, we will analyze data from two primary sources:
 
-    The 2020 U.S. Presidential Election Results by State, to categorize each state’s political affiliation.
-    Greenhouse Gas Emissions by Location, a dataset that captures the state-by-state emissions output.
+    1. The 2020 U.S. Presidential Election Results by State, to categorize each state’s political affiliation.
+    2. Greenhouse Gas Emissions by Location, a dataset that captures the state-by-state emissions output.
 
 This comparison will provide insight into how political leadership may correlate with greenhouse gas emissions levels across the United States.
 
