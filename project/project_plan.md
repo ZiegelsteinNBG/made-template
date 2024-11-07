@@ -41,6 +41,6 @@ This study will assess correlations between political leadership and state-level
 <!-- List of work packages ordered sequentially, each pointing to an issue with more details. -->
 
 1. Dataset selection
-    1.1. Resolve issues for found datasets [https://github.com/ZiegelsteinNBG/made-template/issues/1] [https://github.com/ZiegelsteinNBG/made-template/issues/2], else new dataset selection (worst case subject change)
-2. Building an automated data pipeline
-3. (Project Report) 
+2. Resolve issues for found datasets [https://github.com/ZiegelsteinNBG/made-template/issues/1] [https://github.com/ZiegelsteinNBG/made-template/issues/2], else new dataset selection (worst case subject change)
+3. Building an automated data pipeline
+4. (Project Report) 
