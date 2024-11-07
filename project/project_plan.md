@@ -32,7 +32,7 @@ This study will assess correlations between political leadership and state-level
 
 * Metadata URL: <https://www.kaggle.com/datasets/callummacpherson14/2020-us-presidential-election-results-by-state/data>
 
-* Data URL: <TBA>
+* Data URL: <https://www.kaggle.com/datasets/callummacpherson14/2020-us-presidential-election-results-by-state/download?datasetVersionNumber=1>
 
 *  Data Type: ZIP -> CSV
 
