@@ -1,0 +1,94 @@
+pipeline ProjectDataPipeline{
+
+    WageExtractor
+        -> WageZipArchiveInterpreter
+        -> WageDataFilePicker
+        -> WageTextFileInterpreter
+        -> WageCSVInterpreter
+        -> WageTableInterpreter
+        -> WageLoader;
+
+    EmploymentRatioExtractor
+        -> EmploymentZipArchiveInterpreter
+        -> EmploymentDataFilePicker
+        -> EmploymentTextFileInterpreter
+        -> EmploymentCSVInterpreter
+        -> ClDeleter
+        -> EmploymentTableInterpreter
+        -> EmploymentLoader;
+
+    block WageTextFileInterpreter oftype TextFileInterpreter { }
+    block EmploymentTextFileInterpreter oftype TextFileInterpreter { }
+    
+    // block WageExtractor oftype HttpExtractor{
+    //     retries: 10;
+    //     url: "https://www.kaggle.com/datasets/asaniczka/wages-by-education-in-the-usa-1973-2022/download?datasetVersionNumber=13";
+    // }
+
+    block WageExtractor oftype LocalFileExtractor{
+        filePath: "./wages-by-education-in-the-usa-1973-2022.zip";
+    }
+
+    // block EmploymentRatioExtractor oftype HttpExtractor{
+    //     retries: 10;
+    //     url: "https://www.kaggle.com/datasets/asaniczka/employment-to-population-ratio-for-usa-1979-2023/download?datasetVersionNumber=2";
+    // }
+    block EmploymentRatioExtractor oftype LocalFileExtractor{
+        filePath: "./employment-to-population-ratio-for-usa-1979-2023.zip";
+    }
+    
+
+    
+    block WageZipArchiveInterpreter oftype ArchiveInterpreter { archiveType: "zip";}
+    block EmploymentZipArchiveInterpreter oftype ArchiveInterpreter { archiveType: "zip";}
+    block WageDataFilePicker oftype FilePicker { path: "/wages_by_education.csv";}
+    block EmploymentDataFilePicker oftype FilePicker { path: "/employment_to_population_1979_to_2022.csv";}
+    block WageCSVInterpreter oftype CSVInterpreter {delimiter: ","; }
+    block EmploymentCSVInterpreter oftype CSVInterpreter {delimiter: ","; }
+    block ClDeleter oftype ColumnDeleter{delete: [column B, column C, column D, column E, column F];}
+
+    block WageTableInterpreter oftype TableInterpreter {
+        header: false;
+        columns: [
+            "year" oftype Years,
+            "less_than_hs" oftype decimal,
+            "high_school" oftype decimal,
+            "some_college" oftype decimal,
+            "bachelors_degree" oftype decimal,
+            "advanced_degree" oftype decimal
+        ];
+    }
+
+    block EmploymentTableInterpreter oftype TableInterpreter {
+        header: false;
+        columns: [
+            "year" oftype Years,
+            "less_than_hs" oftype decimal,
+            "high_school" oftype decimal,
+            "some_college" oftype decimal,
+            "bachelors_degree" oftype decimal,
+            "advanced_degree" oftype decimal
+        ];
+    }
+
+    valuetype Years oftype integer{
+        constraints: [
+            YearsConstraint,
+        ];
+    }
+
+    constraint YearsConstraint oftype RangeConstraint {
+        lowerBound: 1979;
+        upperBound: 2022;
+    }
+
+    block WageLoader oftype SQLiteLoader {
+        table: "wages";
+        file: "./combinedTable.sqlite";
+    }
+
+    block EmploymentLoader oftype SQLiteLoader {
+        table: "employment";
+        file: "./combinedTable.sqlite";
+    }
+}
