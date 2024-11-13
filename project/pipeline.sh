@@ -1,8 +1,8 @@
 #!/bin/bash
 
 
-export KAGGLE_USERNAME="nhatkhangvo"
-export KAGGLE_KEY="d5c2f0cf28c4b01a8f405e3b4cfe55e1"
+export KAGGLE_USERNAME="user"
+export KAGGLE_KEY="key"
 
 # kaggle needs to be installed
 if ! command -v kaggle &> /dev/null; then
