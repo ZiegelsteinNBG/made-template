@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# needs to be on venv
+# source ~/path/to/venv/bin/activate
 
 export KAGGLE_USERNAME="user"
 export KAGGLE_KEY="key"
