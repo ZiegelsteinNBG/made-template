@@ -32,6 +32,6 @@
 <!-- List of work packages ordered sequentially, each pointing to an issue with more details. -->
 
 1. Dataset selection
-2. Resolve issues for found datasets [https://github.com/ZiegelsteinNBG/made-template/issues/1] [https://github.com/ZiegelsteinNBG/made-template/issues/2], else new dataset selection (worst case subject change)
 3. Building an automated data pipeline
-4. (Project Report) 
+4. Redo Project Plan
+5. (Project Report) 
