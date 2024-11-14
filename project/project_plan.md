@@ -34,4 +34,5 @@
 1. Dataset selection
 3. Building an automated data pipeline
 4. Redo Project Plan
-5. (Project Report) 
+5. Enhancing the pipeline and script for resiliency
+6. (Project Report) 
