@@ -3,8 +3,8 @@
 # needs to be on venv
 # source ~/path/to/venv/bin/activate
 
-export KAGGLE_USERNAME="user"
-export KAGGLE_KEY="key"
+export KAGGLE_USERNAME=$0
+export KAGGLE_KEY=$1
 
 # kaggle needs to be installed
 if ! command -v kaggle &> /dev/null; then
