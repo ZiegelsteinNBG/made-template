@@ -44,5 +44,4 @@ jobs:
       # Step 3: Install Jayvee
       - name: Install Jayvee
         run: |
-          source .venv/bin/activate
-          pip install jayvee
+            npm install -g @jvalue/jayvee-interpreter
