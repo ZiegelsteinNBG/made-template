@@ -55,8 +55,8 @@ jobs:
           
       - name: Run pipeline with secrets
         env:
-          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
-          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+          KAGGLE_USERNAME: ${{ secrets.KAGGLEUSERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLEKEY }}
         run: |
-          bash test.sh $KAGGLE_USERNAME $KAGGLE_KEY
+          bash test.sh $KAGGLEUSERNAME $KAGGLEKEY
       
