@@ -45,6 +45,10 @@ jobs:
       - name: Install Jayvee
         run: |
             npm install -g @jvalue/jayvee-interpreter
+
+      - name: Install kaggle
+        run: |
+            pip install kaggle
             
       - name: Install git-secrets
         run: |
