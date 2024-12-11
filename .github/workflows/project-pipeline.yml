@@ -58,5 +58,6 @@ jobs:
           KAGGLE_USERNAME: ${{ secrets.KAGGLEUSERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLEKEY }}
         run: |
-          bash ./project/tests.sh $KAGGLEUSERNAME $KAGGLEKEY
+          cd ./project/
+          bash ./tests.sh $KAGGLEUSERNAME $KAGGLEKEY
       
