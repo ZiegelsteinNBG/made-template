@@ -35,13 +35,19 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.11
+          
       - name: Create and activate virtual environment
         run: |
           python -m venv .venv
           source .venv/bin/activate
           pip install --upgrade pip
   
-      # Step 3: Install Jayvee
       - name: Install Jayvee
         run: |
             npm install -g @jvalue/jayvee-interpreter
+
+      - name: Run test.sh
+        run: |
+            bash ./project/test.sh
+
+      
