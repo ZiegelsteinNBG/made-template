@@ -48,6 +48,6 @@ jobs:
 
       - name: Run test.sh
         run: |
-            bash ./project/test.sh
+            bash ./project/tests.sh
 
       
