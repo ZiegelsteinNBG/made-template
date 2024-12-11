@@ -45,9 +45,18 @@ jobs:
       - name: Install Jayvee
         run: |
             npm install -g @jvalue/jayvee-interpreter
-
-      - name: Run test.sh
+            
+      - name: Install git-secrets
         run: |
-            bash ./project/tests.sh
-
+          sudo apt-get update
+          sudo apt-get install -y git
+          git clone https://github.com/awslabs/git-secrets.git
+          cd git-secrets && sudo make install
+          
+      - name: Run pipeline with secrets
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: |
+          bash test.sh $KAGGLE_USERNAME $KAGGLE_KEY
       
