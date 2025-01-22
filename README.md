@@ -1,3 +1,11 @@
+# Project: Comparative Analysis of Wages and Employment-to-Population Ratio by Education in the US
+
+This project presents a comparative analysis of wages and the employment-to-population ratio in the United States from 1979 to
+2022. The primary objective is to address the Question: Is there a direct correlation between wages and employment rates
+across different education levels in the US(1979–2022)? 
+Specifically, the analysis examines the relationship and potential dependency between wages and employment rates within distinct educational groups, providing insights into the labor market dynamics and the role of education in shaping economic outcomes.
+
+
 # Methods of Advanced Data Engineering Template Project
 
 This template project provides some structure for your open data project in the MADE module at FAU.
